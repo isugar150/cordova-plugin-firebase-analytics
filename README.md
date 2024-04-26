@@ -124,25 +124,3 @@ cordova.plugins.firebase.analytics.setDefaultEventParameters({foo: "bar"});
 [twitter-url]: https://twitter.com/chemerisuk
 [twitter-follow]: https://img.shields.io/twitter/follow/chemerisuk.svg?style=social&label=Follow%20me
 [donate-url]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4SVTMPKTAD9QC&source=url
-  
-  
-  
-  
-# JM
-AndrWeisR commented on Jul 28, 2020  
-I had recently this issue. The only solution worked for me is this:  
-  
-Remove both plugins, remove platform ios  
-cordova plugin add phonegap-plugin-push@2.1.3 --save  
-Clone the cordova-plugin-firebase-analytics repo, modify plugin.xml and set firebase/core podspec to 4.0.0  
-cordova plugin add {forked-repo-url}.git  
-pod install (in ios folder)  
-Now both works normally.  
-  
-I am having these same plugin incompatibility problems. The steps above allowed me to add both the analytics and push plugins on iOS, but I still get a build error in  Xcode: "Module 'FirebaseInstanceID' not found". I have already done the manual pod install, i.e.  
-
-cd platforms/ios  
-pod install  
-which runs successfully, but still the "Module 'FirebaseInstanceID' not found" error persists. I have done a pod repo update, and a build clean in Xcode.
-
-Where do I go from here?
