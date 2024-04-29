@@ -1,19 +1,19 @@
 # Custom
-[Environment]  
+## Environment  
 node: 14.21.3  
 cordova: 11.1.0  
 android target sdk: 32  
 ios deployment target: 12.0  
   
-[cordova-plugin-firebase-messaging]  
+## cordova-plugin-firebase-messaging  
 Android: 6.1.2  
 iOS: 6.1.2  
   
-[cordova-plugin-firebase-analytics]  
+## cordova-plugin-firebase-analytics  
 Android: 6.1.0  
 iOS: 7.0.5  
   
-[Dependency]  
+## Dependency  
 messaging to https://github.com/isugar150/cordova-plugin-firebase-messaging.git  
   
 # Cordova plugin for [Firebase Analytics](https://firebase.google.com/docs/analytics/)
