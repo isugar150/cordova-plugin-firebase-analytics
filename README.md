@@ -5,10 +5,6 @@ cordova: 11.1.0
 android target sdk: 32  
 ios deployment target: 12.0  
   
-##### cordova-plugin-firebase-messaging  
-Android: 6.1.2  
-iOS: 6.1.2  
-  
 ##### cordova-plugin-firebase-analytics  
 Android: 6.1.0  
 iOS: 7.0.5  
