@@ -13,7 +13,7 @@ iOS: 6.1.2
 Android: 6.1.0  
 iOS: 7.0.5  
   
-[Dependency]
+[Dependency]  
 messaging to https://github.com/isugar150/cordova-plugin-firebase-messaging.git  
   
 # Cordova plugin for [Firebase Analytics](https://firebase.google.com/docs/analytics/)
